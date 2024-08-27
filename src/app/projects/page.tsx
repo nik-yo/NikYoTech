@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="my-4 space-y-2">
       <h1 className="text-2xl font-bold">Projects</h1>
-      <p>Some projects for others that I'm involved in.</p>
+      <p>Some projects for others that I&apos;m involved in.</p>
       <ProjectCard>
         <h2 className="font-bold">Gentle Heart Company (GHC) Nepal</h2>
         <p>Helping a non-profit in Nepal to setup their WordPress site with e-commerce and e-booking.</p>
