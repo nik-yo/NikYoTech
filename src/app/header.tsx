@@ -11,8 +11,8 @@ export default function Header() {
       href: "/talks"
     },
     {
-      text: "About me",
-      href: "https://www.nikkiyodo.com"
+      text: "About",
+      href: "/about"
     }
   ]
 
