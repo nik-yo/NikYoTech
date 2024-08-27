@@ -32,7 +32,7 @@ export default function Home() {
     <>
       <div className="my-2">
         <h2 className="text-lg font-bold">Would love to help</h2>
-        <p>Hi, I'm Nikki, an engineer with over 10 years of experience developing web and mobile applications and I also have experience in managing cloud and devops infrastructure and operations. Technology is my passion and I would love to help you with any of your technology needs.</p>
+        <p>Hi, I&apos;m Nikki, an engineer with over 10 years of experience developing web and mobile applications and I also have experience in managing cloud and devops infrastructure and operations. Technology is my passion and I would love to help you with any of your technology needs.</p>
       </div>
       <div className="text-center my-2">
         <div className="mb-4">Need help with a project?</div>
@@ -52,7 +52,7 @@ export default function Home() {
         }
       </div>
       <div className="text-center my-8">
-        <div className="mb-4">Other needs? Let's discuss.</div>
+        <div className="mb-4">Other needs? Let&apos;s discuss.</div>
         <LinkButton href="mailto:nik_yodo@yahoo.com">Email me</LinkButton>
         <div className="my-2">or</div>
         <div className="flex justify-center space-x-4">
