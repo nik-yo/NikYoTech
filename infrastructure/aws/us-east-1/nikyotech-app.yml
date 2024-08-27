@@ -1,0 +1,106 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  NikYoTechS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: nikyotech-app
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+      WebsiteConfiguration:
+        ErrorDocument: index.html
+        IndexDocument: index.html
+
+  NikYoTechS3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties: 
+      Bucket: !Ref NikYoTechS3Bucket
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Action:
+            - s3:GetObject
+            Effect: Allow
+            Resource: !Sub 
+              - 'arn:aws:s3:::${BucketName}/*'
+              - BucketName: !Ref NikYoTechS3Bucket
+            Principal: '*'
+
+  # NikYoTechOAC:
+  #   Type: AWS::CloudFront::OriginAccessControl
+  #   Properties:
+  #     OriginAccessControlConfig:
+  #         Name: asylosoft-app-nikkiyodo
+  #         OriginAccessControlOriginType: s3
+  #         SigningBehavior: always
+  #         SigningProtocol: sigv4
+
+  NikYoTechCloudFrontCachePolicy:
+    Type: AWS::CloudFront::CachePolicy
+    Properties: 
+      CachePolicyConfig: 
+        DefaultTTL: 300 # 86400
+        MaxTTL: 300 # 31536000
+        MinTTL: 300
+        Name: nikyotech-app-cache-policy
+        ParametersInCacheKeyAndForwardedToOrigin:
+          CookiesConfig: 
+            CookieBehavior: none
+          EnableAcceptEncodingBrotli: false
+          EnableAcceptEncodingGzip: false
+          HeadersConfig: 
+            HeaderBehavior: none
+          QueryStringsConfig: 
+            QueryStringBehavior: none
+
+  NikYoTechCloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties: 
+      DistributionConfig:
+        Aliases:
+          - nikyotech.nikkiyodo.com
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+        DefaultCacheBehavior:
+          CachePolicyId: !Ref NikYoTechCloudFrontCachePolicy
+          TargetOriginId: !Ref NikYoTechS3Bucket
+          ViewerProtocolPolicy: redirect-to-https
+        Enabled: true
+        Origins:
+          - CustomOriginConfig:
+              OriginProtocolPolicy: http-only
+            DomainName: !Sub
+              - '${BucketName}.s3-website.${AWS::Region}.amazonaws.com'
+              - BucketName: !Ref NikYoTechS3Bucket
+            Id: !Ref NikYoTechS3Bucket
+            # OriginAccessControlId: !Ref NikYoTechOAC
+        ViewerCertificate: 
+          AcmCertificateArn: !Ref NikYoTechCertificate
+          MinimumProtocolVersion: TLSv1.2_2021
+          SslSupportMethod: sni-only
+
+  NikYoTechCertificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: nikyotech.nikkiyodo.com
+      DomainValidationOptions:
+        - DomainName: nikyotech.nikkiyodo.com
+          HostedZoneId: !ImportValue NikkiYodoHostedZoneId
+      # SubjectAlternativeNames: 
+      #   - www.nikkiyodo.com
+      ValidationMethod: DNS
+
+  NikYoTechRecordSet:
+    Type: AWS::Route53::RecordSet
+    Properties: 
+      AliasTarget: 
+        DNSName: !GetAtt NikYoTechCloudFrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+      HostedZoneId: !ImportValue NikkiYodoHostedZoneId
+      Name: nikyotech.nikkiyodo.com
+      Type: A
+  
