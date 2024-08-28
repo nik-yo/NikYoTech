@@ -3,6 +3,10 @@ import Link from "next/link";
 export default function Header() {
   const links = [
     {
+      text: "Services",
+      href: "/services"
+    },
+    {
       text: "Projects",
       href: "/projects"
     },
