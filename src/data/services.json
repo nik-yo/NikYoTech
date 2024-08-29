@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Custom Application Development",
+    "desc": "I can help with developing custom application and solution for web, mobile, and cloud."
+  },
+  {
+    "name": "Software and Cloud Architecture",
+    "desc": "A good architecture will speed development, ease maintenance, result in robust operation, stronger security, and lower financial cost. I can help with architecting one."
+  },
+  {
+    "name": "Maintenance and Operation",
+    "desc": "Leave maintenance and operations to me, so you can focus on your business."
+  },
+  {
+    "name": "Automation and Optimization",
+    "desc": "Leave things that required fast response and repetition to automation. I can also help with performance, cost, and process optimization."
+  },
+  {
+    "name": "Analytics and Troubleshooting",
+    "desc": "Going through data can be overwhelming. I can help with analytics of performance and data. Sometimes the more eyes the better, I can come along your team and help with troubleshooting."
+  },
+  {
+    "name": "Research and Proof of Concept",
+    "desc": "Have an idea but not sure if it will work? I can help with in-depth research and proof of concept."
+  }
+]
