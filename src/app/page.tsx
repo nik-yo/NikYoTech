@@ -31,12 +31,15 @@ export default function Home() {
   return (
     <>
       <div className="my-2">
-        <h2 className="text-lg font-bold">Would love to help</h2>
+        <h2 className="text-lg font-bold">Love to help</h2>
         <p>Hi, I&apos;m Nikki, an engineer with over 10 years of experience developing web and mobile applications and I also have experience in managing cloud and devops infrastructure and operations. Technology is my passion and I would love to help you with any of your technology needs.</p>
       </div>
       <div className="text-center my-2">
         <div className="mb-4">Need help with a project?</div>
         <LinkButton href="mailto:nik_yodo@yahoo.com">Email me</LinkButton>
+      </div>
+      <div className="my-4 text-center">
+        <Link className="text-blue-700 font-bold text-2xl" href="/projects">Check out my project page </Link>
       </div>
       <div className="my-2">
         <h1 className="text-2xl font-bold">What values can I provide?</h1>
