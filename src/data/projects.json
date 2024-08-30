@@ -278,5 +278,19 @@
     "link": "",
     "project_link": "",
     "status": "Completed"
+  },
+  {
+    "title": "Aggregate Big Data for Analytics and Web Application Consumption",
+    "desc": "In this project, we are talking about hundreds of millions of row with 200+ columns. To do this fast, I wrote Spark application using pySpark on EMR.",
+    "link": "",
+    "project_link": "",
+    "status": "Completed"
+  },
+  {
+    "title": "Speed Up Big Data Ingestion",
+    "desc": "The process to ingest to Elasticsearch was too slow, so I used Apache Phoenix with HBase to speed up data ingestion and serve data to web application. The last performance that I noticed was about 15-20k rows per second ingestion.",
+    "link": "",
+    "project_link": "",
+    "status": "Completed"
   }
 ]
