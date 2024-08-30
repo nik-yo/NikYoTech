@@ -14,6 +14,20 @@
     "status": "Ongoing"
   },
   {
+    "title": "Use CDK to Create Environment",
+    "desc": "Due to the limitation of CloudFormation, I had to use CDK to streamline the process of deploying an environment from scratch.",
+    "link": "",
+    "project_link": "",
+    "status": "Ongoing"
+  },
+  {
+    "title": "Use Bicep to Create Environment in Azure",
+    "desc": "For some customers, there's a need to create an environment in Azure, so I started working on it using Bicep.",
+    "link": "",
+    "project_link": "",
+    "status": "Ongoing"
+  },
+  {
     "title": "Build Multiple Cloud-based Environment for SaaS platform",
     "desc": "I help build dev, qa, staging, and production environment. Each in different AWS account and peered with a hub VPC, so we can use a single VPN to access resources in all of them. For more information, please visit the project link.",
     "link": "",
@@ -240,6 +254,27 @@
   {
     "title": "Host Rise 360 Exported Educational Content in AWS",
     "desc": "It contains static html and assets and the requirement is only company's employee have access to it. I first hosted it in Static Web App, but the content grew over 250 MB limit, so I moved it to AWS Lightsail with MSAL.js and simple Node.js with serve package.",
+    "link": "",
+    "project_link": "",
+    "status": "Completed"
+  },
+  {
+    "title": "White labeling",
+    "desc": "Basically the idea is *.example.com has to be routed to our server that will send a copy of the front end unless it is reserved. For example: api.example.com will be routed to the API endpoint, but xyz-company.example.com will be routed to the front end. That way, the app doesn't have to configure every new subdomain for every company that wants white labeling. I accomplished this by configuring Route 53, ALB and Ingress in Kubernetes.",
+    "link": "",
+    "project_link": "",
+    "status": "Completed"
+  },
+  {
+    "title": "Load Test WordPress Site",
+    "desc": "Marketing team WordPress site crashed when they sent out 25,000 marketing emails. So I used Locust to load test the site to allow it to handle minimum of 25,000 concurrent visit.",
+    "link": "",
+    "project_link": "",
+    "status": "Completed"
+  },
+  {
+    "title": "Automatically Benchmark EC2 Instances",
+    "desc": "In order to figure out various performance difference between EC2 instances, I had to automate benchmarking the various EC2 instances using Geekbench on custom EC2 AMI with SSM to automatically run and upload the result to S3.",
     "link": "",
     "project_link": "",
     "status": "Completed"
