@@ -29,29 +29,32 @@ export default function Home() {
 
   return (
     <>
-      <div className="my-2">
+      <div className="my-8">
         <h2 className="text-lg font-bold">Love to help</h2>
         <p>Hi, I&apos;m Nikki, an engineer with over 10 years of experience developing web and mobile applications and I also have experience in managing cloud and devops infrastructure and operations. Technology is my passion and I would love to help you with any of your technology needs.</p>
       </div>
-      <div className="text-center my-2">
+      <hr />
+      <div className="text-center my-4">
         <div className="mb-4">Need help with a project?</div>
         <LinkButton href="mailto:nik_yodo@yahoo.com">Email me</LinkButton>
       </div>
       <div className="my-4 text-center">
         <Link className="text-blue-700 font-bold text-2xl" href="/projects">Check out my project page </Link>
       </div>
-      <div className="my-2">
-        <h1 className="text-2xl font-bold">Services</h1>
-      </div>
-      <div className="flex flex-col space-y-4 my-2">
-        <ul className="list-disc px-4">
-        {
-          ServiceData.map((s, i) => (
-            <li key={`svc-${i}`} className="py-2 text-xl">{s.name}</li>
-          ))
-        }
-        </ul>
-      </div>
+      <div className="rounded-2xl border-2 border-blue-500 my-2 space-y-2 p-8">
+        <div className="">
+          <h1 className="text-2xl font-bold">Services</h1>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <ul className="list-disc px-4">
+          {
+            ServiceData.map((s, i) => (
+              <li key={`svc-${i}`} className="py-2 text-xl">{s.name}</li>
+            ))
+          }
+          </ul>
+        </div>
+      </div>      
       <div className="text-center my-8">
         <div className="mb-4">Other needs? Let&apos;s discuss.</div>
         <LinkButton href="mailto:nik_yodo@yahoo.com">Email me</LinkButton>
