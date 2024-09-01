@@ -36,10 +36,10 @@ export default function Home() {
       <hr />
       <div className="text-center my-4">
         <div className="mb-4">Need help with a project?</div>
-        <LinkButton href="mailto:nik_yodo@yahoo.com">Email me</LinkButton>
+        <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
       </div>
       <div className="my-4 text-center">
-        <Link className="text-blue-700 font-bold text-2xl" href="/projects">Check out my project page </Link>
+        <Link className="text-blue-700 font-bold text-2xl" href="/projects">Check out my project page</Link>
       </div>
       <div className="rounded-2xl border-2 border-blue-500 my-2 space-y-2 p-8">
         <div className="">
@@ -57,7 +57,7 @@ export default function Home() {
       </div>      
       <div className="text-center my-8">
         <div className="mb-4">Other needs? Let&apos;s discuss.</div>
-        <LinkButton href="mailto:nik_yodo@yahoo.com">Email me</LinkButton>
+        <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
         <div className="my-2">or</div>
         <div className="flex justify-center space-x-4">
           <Link href="https://github.com/nik-yo"><FaGithub className="size-8" /></Link>
