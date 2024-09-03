@@ -73,7 +73,7 @@
     "title": "Dynamic Workers Deployments per Kafka Topic",
     "desc": "I had to configure CI/CD pipelines that takes one application and split it into multiple deployments where each deployment will handle one Kafka topic for Kubernetes. This is so we can scale per topic. And the process has to handle if a new topic is introduced and old topic is removed without any manual configuration change.",
     "link": "",
-    "project_link": "",
+    "project_link": "https://github.com/nik-yo/WorkersPerTopic",
     "status": "Completed"
   },
   {
