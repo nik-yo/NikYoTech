@@ -19,7 +19,6 @@ export default function Projects() {
   return (
     <div className="my-4 space-y-2">
       <h1 className="text-2xl font-bold">Projects</h1>
-      <p>Some projects that I&apos;m involved in.</p>
       {
         ProjectData.map((p,i) => (
           <ProjectCard key={`proj-${i}`}>
