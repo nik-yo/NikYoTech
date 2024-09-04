@@ -49,7 +49,18 @@ export default function Home() {
           <ul className="list-disc px-4">
           {
             ServiceData.map((s, i) => (
-              <li key={`svc-${i}`} className="py-2 text-xl">{s.name}</li>
+              <li key={`svc-${i}`} className="py-2 text-xl">
+                <div>{s.name}</div>
+                <div className="text-sm">
+                  <ul className="list-['-'] pl-2">
+                    {
+                      s.examples.map((e, i) => (
+                        <li key={`ex-${i}`} className="pl-2">{e}</li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              </li>
             ))
           }
           </ul>

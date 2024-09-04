@@ -28,6 +28,13 @@
     "status": "Ongoing"
   },
   {
+    "title": "Automate Ticket Creation",
+    "desc": "A recent request is to automatically create a ticket based on a certain event such as vulnerability, system impaired, etc.",
+    "link": "",
+    "project_link": "",
+    "status": "Ongoing"
+  },
+  {
     "title": "Build Multiple Cloud-based Environment for SaaS platform",
     "desc": "I help build dev, qa, staging, and production environment. Each in different AWS account and peered with a hub VPC, so we can use a single VPN to access resources in all of them. For more information, please visit the project link.",
     "link": "",
@@ -289,6 +296,13 @@
   {
     "title": "Speed Up Big Data Ingestion",
     "desc": "The process to ingest to Elasticsearch was too slow, so I used Apache Phoenix with HBase to speed up data ingestion and serve data to web application. The last performance that I noticed was about 15-20k rows per second ingestion.",
+    "link": "",
+    "project_link": "",
+    "status": "Completed"
+  },
+  {
+    "title": "Create compliance alarms",
+    "desc": "The company was pursuing SOC 2 and ISO 27001 certifications and I had to create alarms when certain events occurred so we were notified.",
     "link": "",
     "project_link": "",
     "status": "Completed"

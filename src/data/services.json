@@ -1,26 +1,72 @@
 [
   {
     "name": "Custom Application Development",
-    "desc": "I can help with developing custom application and solution for web, mobile, and cloud."
+    "desc": "I can help with developing custom application and solution for web, mobile, and cloud.",
+    "examples": [
+      "Web application, Website",
+      "Mobile application (android, iOS)",
+      "Desktop application",
+      "Software packages (Nuget, pip)",
+      "Product extensions (Azure DevOps, Visual Studio)"
+    ]
   },
   {
     "name": "Software and Cloud Architecture",
-    "desc": "A good architecture will speed development, ease maintenance, result in robust operation, stronger security, and lower financial cost. I can help with architecting one."
+    "desc": "A good architecture will speed development, ease maintenance, result in robust operation, stronger security, and lower financial cost. I can help with architecting one.",
+    "examples": [
+      "Cloud architecture (AWS, Azure)",
+      "Software architecture (microservices, event driven)"
+    ]
   },
   {
     "name": "Maintenance and Operation",
-    "desc": "Leave maintenance and operations to me, so you can focus on your business."
+    "desc": "Leave maintenance and operations to me, so you can focus on your business.",
+    "examples": [
+      "Vulnerability patching",
+      "Performance monitoring",
+      "Version upgrade",
+      "Content update",
+      "Backup and restore",
+      "Identity and Access Management"
+    ]
   },
   {
     "name": "Automation and Optimization",
-    "desc": "Leave things that required fast response and repetition to automation. I can also help with performance, cost, and process optimization."
+    "desc": "Leave things that required fast response and repetition to automation. I can also help with performance, cost, and process optimization.",
+    "examples": [
+      "Event handling",
+      "CI/CD pipelines",
+      "Migration to different technology (RDMS to NoSQL)",
+      "Modernization (.NET Framework to .NET Core)",
+      "Simplification (Server-side web app to SPA)",
+      "Cost optimization"
+    ]
   },
   {
     "name": "Analytics and Troubleshooting",
-    "desc": "Going through data can be overwhelming. I can help with analytics of performance and data. Sometimes the more eyes the better, I can come along your team and help with troubleshooting."
+    "desc": "Going through data can be overwhelming. I can help with analytics of performance and data. Sometimes the more eyes the better, I can come along your team and help with troubleshooting.",
+    "examples": [
+      "FinOps practice",
+      "Root Cause Analysis",
+      "Big data processing and analytics"
+    ]
   },
   {
     "name": "Research and Proof of Concept",
-    "desc": "Have an idea but not sure if it will work? I can help with in-depth research and proof of concept."
+    "desc": "Have an idea but not sure if it will work? I can help with in-depth research and proof of concept.",
+    "examples": [
+      "Figuring out the right technology for business needs",
+      "Documentation",
+      "Load testing"
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "desc": "I'm up for challenges.",
+    "examples": [
+      "Configuring devices (routers, switch)",
+      "Photo and video editing",
+      "Laptop fix"
+    ]
   }
 ]
