@@ -1,8 +1,9 @@
+import Content from "@/components/content"
 import ServiceData from "../../data/services.json"
 
 export default function Services() {
   return (
-    <div className="my-4 space-y-2">
+    <Content className="my-4 space-y-2">
       <h1 className="text-2xl font-bold">Services</h1>
       <p>Some services that I provide</p>
       {
@@ -21,6 +22,6 @@ export default function Services() {
           </div>
         ))
       }      
-    </div>
+    </Content>
   )
 }

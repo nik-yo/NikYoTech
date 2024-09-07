@@ -1,5 +1,13 @@
 [
   {
+    "title": "T-Shirt Editing",
+    "desc": "I was helping a company who needed a custom t-shirt done in 2 business days (including printing). I'm not a designer, but I helped customizing t-shirts based on requests.",
+    "link": "/projects/t-shirt-editing",
+    "project_link": "",
+    "status": "Completed",
+    "date": "9/6/2024"
+  },
+  {
     "title": "Gentle Heart Company (GHC) Nepal",
     "desc": "Helping a non-profit in Nepal to setup their WordPress site with e-commerce and e-booking.",
     "link": "https://ghcnepal.com",

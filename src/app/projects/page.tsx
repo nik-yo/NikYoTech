@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/project-card"
 import Link from "next/link"
 import ProjectData from "../../data/projects.json"
+import Content from "@/components/content";
 
 export default function Projects() {
   const getGetStatusColor = (status: string) => {
@@ -17,7 +18,7 @@ export default function Projects() {
   }
 
   return (
-    <div className="my-4 space-y-2">
+    <Content className="my-4 space-y-2">
       <h1 className="text-2xl font-bold">Projects</h1>
       {
         ProjectData.map((p,i) => (
@@ -34,6 +35,6 @@ export default function Projects() {
           </ProjectCard>
         ))
       }
-    </div>
+    </Content>
   )
 }

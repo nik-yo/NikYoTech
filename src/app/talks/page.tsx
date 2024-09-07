@@ -1,9 +1,10 @@
+import Content from "@/components/content";
 import TalkCard from "@/components/talk-card";
 import Link from "next/link";
 
 export default function Talks() {
   return (
-    <div className="my-4 space-y-2">
+    <Content className="my-4 space-y-2">
       <h1 className="text-2xl font-bold">Talks</h1>
       <p>Talks that I gave</p>
       <TalkCard>
@@ -15,6 +16,6 @@ export default function Talks() {
           <div><span className="font-bold">Venue: </span>Online</div>
         </div>
       </TalkCard>
-    </div>
+    </Content>
   )
 }

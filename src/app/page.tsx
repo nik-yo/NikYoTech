@@ -2,6 +2,7 @@ import LinkButton from "@/components/link-button"
 import Link from "next/link"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import ServiceData from "../data/services.json"
+import Content from "@/components/content";
 
 export default function Home() {
   // const services = [
@@ -29,52 +30,57 @@ export default function Home() {
 
   return (
     <>
-      <div className="my-8">
-        <h2 className="text-lg font-bold">Love to help</h2>
-        <p>Hi, I&apos;m Nikki, an engineer with over 10 years of experience developing web and mobile applications and I also have experience in managing cloud and devops infrastructure and operations. Technology is my passion and I would love to help you with any of your technology needs.</p>
+      <div style={{backgroundImage: "url('/bg.jpeg')"}} className="h-80 bg-no-repeat bg-center bg-cover">
+
       </div>
-      <hr />
-      <div className="text-center my-4">
-        <div className="mb-4">Need help with a project?</div>
-        <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
-      </div>
-      <div className="my-4 text-center">
-        <Link className="text-blue-700 font-bold text-2xl" href="/projects">Check out my project page</Link>
-      </div>
-      <div className="rounded-2xl border-2 border-blue-500 my-2 space-y-2 p-8">
-        <div className="">
-          <h1 className="text-2xl font-bold">Services</h1>
+      <Content>
+        <div className="my-8">
+          <h2 className="text-lg font-bold">Love to help</h2>
+          <p>Hi, I&apos;m Nikki, an engineer with over 10 years of experience developing web and mobile applications and I also have experience in managing cloud and devops infrastructure and operations. Technology is my passion and I would love to help you with any of your technology needs.</p>
         </div>
-        <div className="flex flex-col space-y-4">
-          <ul className="list-disc px-4">
-          {
-            ServiceData.map((s, i) => (
-              <li key={`svc-${i}`} className="py-2 text-xl">
-                <div>{s.name}</div>
-                <div className="text-sm">
-                  <ul className="list-['-'] pl-2">
-                    {
-                      s.examples.map((e, i) => (
-                        <li key={`ex-${i}`} className="pl-2">{e}</li>
-                      ))
-                    }
-                  </ul>
-                </div>
-              </li>
-            ))
-          }
-          </ul>
+        <hr />
+        <div className="text-center my-4">
+          <div className="mb-4">Need help with a project?</div>
+          <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
         </div>
-      </div>      
-      <div className="text-center my-8">
-        <div className="mb-4">Other needs? Let&apos;s discuss.</div>
-        <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
-        <div className="my-2">or</div>
-        <div className="flex justify-center space-x-4">
-          <Link href="https://github.com/nik-yo"><FaGithub className="size-8" /></Link>
-          <Link href="https://www.linkedin.com/in/nikkiyodo"><FaLinkedin href="" className="size-8" /></Link>
+        <div className="my-4 text-center">
+          <Link className="text-blue-700 font-bold text-2xl" href="/projects">Check out my project page</Link>
         </div>
-      </div>
+        <div className="rounded-2xl border-2 border-blue-500 my-2 space-y-2 p-8">
+          <div className="">
+            <h1 className="text-2xl font-bold">Services</h1>
+          </div>
+          <div className="flex flex-col space-y-4">
+            <ul className="list-disc px-4">
+            {
+              ServiceData.map((s, i) => (
+                <li key={`svc-${i}`} className="py-2 text-xl">
+                  <div>{s.name}</div>
+                  <div className="text-sm">
+                    <ul className="list-['-'] pl-2">
+                      {
+                        s.examples.map((e, i) => (
+                          <li key={`ex-${i}`} className="pl-2">{e}</li>
+                        ))
+                      }
+                    </ul>
+                  </div>
+                </li>
+              ))
+            }
+            </ul>
+          </div>
+        </div>      
+        <div className="text-center my-8">
+          <div className="mb-4">Other needs? Let&apos;s discuss.</div>
+          <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
+          <div className="my-2">or</div>
+          <div className="flex justify-center space-x-4">
+            <Link href="https://github.com/nik-yo"><FaGithub className="size-8" /></Link>
+            <Link href="https://www.linkedin.com/in/nikkiyodo"><FaLinkedin href="" className="size-8" /></Link>
+          </div>
+        </div>
+      </Content>
     </>
   );
 }
