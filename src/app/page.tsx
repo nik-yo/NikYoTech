@@ -33,20 +33,20 @@ export default function Home() {
       <div style={{backgroundImage: "url('/bg.jpeg')"}} className="h-80 bg-no-repeat bg-center bg-cover">
 
       </div>
-      <Content>
-        <div className="my-8">
+      <Content className="space-y-4 p-4">
+        <div>
           <h2 className="text-lg font-bold">Love to help</h2>
           <p>Hi, I&apos;m Nikki, an engineer with over 10 years of experience developing web and mobile applications and I also have experience in managing cloud and devops infrastructure and operations. Technology is my passion and I would love to help you with any of your technology needs.</p>
         </div>
         <hr />
-        <div className="text-center my-4">
+        <div className="text-center">
           <div className="mb-4">Need help with a project?</div>
           <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
         </div>
-        <div className="my-4 text-center">
+        <div className="text-center">
           <Link className="text-blue-700 font-bold text-2xl" href="/projects">Check out my project page</Link>
         </div>
-        <div className="rounded-2xl border-2 border-blue-500 my-2 space-y-2 p-8">
+        <div className="rounded-2xl border-2 border-blue-500 space-y-2 p-8">
           <div className="">
             <h1 className="text-2xl font-bold">Services</h1>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
             </ul>
           </div>
         </div>      
-        <div className="text-center my-8">
+        <div className="text-center">
           <div className="mb-4">Other needs? Let&apos;s discuss.</div>
           <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
           <div className="my-2">or</div>
@@ -79,6 +79,9 @@ export default function Home() {
             <Link href="https://github.com/nik-yo"><FaGithub className="size-8" /></Link>
             <Link href="https://www.linkedin.com/in/nikkiyodo"><FaLinkedin href="" className="size-8" /></Link>
           </div>
+        </div>
+        <div className="flex justify-center py-8">
+          <img src="/opcc-member.png" className="w-40" alt="Overland Park Chamber of Commerce Member" />
         </div>
       </Content>
     </>
