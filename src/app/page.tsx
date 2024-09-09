@@ -35,8 +35,8 @@ export default function Home() {
       </div>
       <Content className="space-y-4 p-4">
         <div>
-          <h2 className="text-lg font-bold">Love to help</h2>
-          <p>Hi, I&apos;m Nikki, an engineer with over 10 years of experience developing web and mobile applications and I also have experience in managing cloud and devops infrastructure and operations. Technology is my passion and I would love to help you with any of your technology needs.</p>
+          <h2 className="text-lg font-bold">I help businesses make the most out of technology to solve business problems and achieve business goals.</h2>
+          <p>Various approaches are required to reach the finish line which can include a combination of custom application development, robust architecture design, reliable operation execution, and other technology related services. I will come alongside you in implementation and provide advices to maximize value and balance cost, effort, and quality.</p>
         </div>
         <hr />
         <div className="text-center">
