@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <Content className="space-y-4 p-4">
         <div>
-          <h2 className="text-lg font-bold">I help businesses make the most out of technology to solve business problems and achieve business goals.</h2>
+          <h2 className="text-lg font-bold">I help businesses solving problems and achieving business goals using Cloud, Mobile, and Web technologies.</h2>
           <p>Various solutions, each with its own complexity, are required to achieve business goals and they can be overhelming to learn, implement, and keep up. I will come alongside you to implement the solutions and provide advices to maximize the value of your technology investment in order to reach your goals. I have over 10 years experience in various technologies development and operation which I would love to apply them for the benefit of your business.</p>
         </div>
         <hr />
