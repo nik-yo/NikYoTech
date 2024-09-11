@@ -21,6 +21,10 @@ export default function Header() {
       href: "/talks"
     },
     {
+      text: "Blogs",
+      href: "/blogs"
+    },
+    {
       text: "Certifications",
       href: "/certifications"
     },
