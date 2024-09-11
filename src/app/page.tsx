@@ -59,8 +59,8 @@ export default function Home() {
                   <div className="text-sm">
                     <ul className="list-['-'] pl-2">
                       {
-                        s.examples.map((e, i) => (
-                          <li key={`ex-${i}`} className="pl-2">{e}</li>
+                        s.details.map((d, i) => (
+                          <li key={`ex-${i}`} className="pl-2">{d.name}</li>
                         ))
                       }
                     </ul>

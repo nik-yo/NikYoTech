@@ -15,10 +15,10 @@ export default function TShirtEditing() {
         <img src="/t-shirt-editing/asterchat_front_v2b.png" alt="T-shirt front version 2"/>
         <img src="/t-shirt-editing/asterchat_back_v2.png" alt="T-shirt back version 2"/>
       </div>
-      <p className="font-bold">Final version</p>
+      <p className="font-bold">Version 3</p>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <img src="/t-shirt-editing/asterchat_front_v4b.png" alt="T-shirt front final version"/>
-        <img src="/t-shirt-editing/asterchat_back_v4.png" alt="T-shirt back final version"/>
+        <img src="/t-shirt-editing/asterchat_front_v4b.png" alt="T-shirt front version 3"/>
+        <img src="/t-shirt-editing/asterchat_back_v4.png" alt="T-shirt back version 3"/>
       </div>
     </Content>
   )
