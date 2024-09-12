@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaX } from "react-icons/fa6";
+import Image from "next/image"
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -39,7 +40,7 @@ export default function Header() {
       <div className="py-3 px-8 md:px-32 lg:px-48 xl:px-64 2xl:px-96 bg-blue-500">
         <nav className="text-sm text-white flex items-center">
           <Link className="font-bold" href="/">
-            <img src="/logo_128x35.png" alt="NikYo Technology Consulting"/>
+            <Image src="/logo_128x35.png" alt="NikYo Technology Consulting" width={128} height={35}/>
           </Link>
           <div className="grow text-end hidden md:block">
             {

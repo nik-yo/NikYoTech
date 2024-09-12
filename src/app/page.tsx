@@ -3,6 +3,7 @@ import Link from "next/link"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import ServiceData from "../data/services.json"
 import Content from "@/components/content";
+import Image from "next/image"
 
 export default function Home() {
   // const services = [
@@ -70,7 +71,7 @@ export default function Home() {
             }
             </ul>
           </div>
-        </div>      
+        </div>
         <div className="text-center">
           <div className="mb-4">Other needs? Let&apos;s discuss.</div>
           <LinkButton href="mailto:nikki.yodo@nikyotech.com">Email me</LinkButton>
@@ -81,7 +82,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center py-8">
-          <img src="/opcc-member.png" className="w-40" alt="Overland Park Chamber of Commerce Member" />
+          <Image src="/opcc-member.png" className="w-40" alt="Overland Park Chamber of Commerce Member" width={160} height={87}/>
         </div>
       </Content>
     </>

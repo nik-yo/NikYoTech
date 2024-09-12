@@ -1,42 +1,42 @@
 [
   {
     "title": "AWS Certified Solutions Architect - Professional",
-    "url": "aws/aws-certified-solutions-architect-professional.jpg"
+    "url": "/aws/aws-certified-solutions-architect-professional.jpg"
   },
   {
     "title": "AWS Certified DevOps Engineer - Professional",
-    "url": "aws/aws-certified-devops-engineer-professional.jpg"
+    "url": "/aws/aws-certified-devops-engineer-professional.jpg"
   },
   {
     "title": "AWS Certified Security - Specialty",
-    "url": "aws/aws-certified-security-specialty.jpg"
+    "url": "/aws/aws-certified-security-specialty.jpg"
   },
   {
     "title": "AWS Certified Data Analytics - Specialty",
-    "url": "aws/aws-certified-data-analytics-specialty.jpg"
+    "url": "/aws/aws-certified-data-analytics-specialty.jpg"
   },
   {
     "title": "AWS Certified Advanced Networking - Specialty",
-    "url": "aws/aws-certified-advanced-networking-specialty.jpg"
+    "url": "/aws/aws-certified-advanced-networking-specialty.jpg"
   },
   {
     "title": "AWS Certified Database - Specialty",
-    "url": "aws/aws-certified-database-specialty.jpg"
+    "url": "/aws/aws-certified-database-specialty.jpg"
   },
   {
     "title": "AWS Certified Solutions Architect - Associate",
-    "url": "aws/aws-certified-solutions-architect-associate.jpg"
+    "url": "/aws/aws-certified-solutions-architect-associate.jpg"
   },
   {
     "title": "AWS Certified Developer - Associate",
-    "url": "aws/aws-certified-developer-associate.jpg"
+    "url": "/aws/aws-certified-developer-associate.jpg"
   },
   {
     "title": "AWS Certified SysOps Administrator - Associate",
-    "url": "aws/aws-certified-sysops-administrator-associate.jpg"
+    "url": "/aws/aws-certified-sysops-administrator-associate.jpg"
   },
   {
     "title": "AWS Certified Cloud Practitioner",
-    "url": "aws/aws-certified-cloud-practitioner.jpg"
+    "url": "/aws/aws-certified-cloud-practitioner.jpg"
   }
 ]

@@ -1,5 +1,6 @@
 import Content from "@/components/content"
 import CertData from "../../data/certificates.json"
+import Image from "next/image"
 
 export default function Certifications() {
   return (
@@ -9,9 +10,9 @@ export default function Certifications() {
         {
           CertData.map((c, i) => (
             <div key={`cert-${i}`}>
-              <img src={c.url} alt={c.title}/>
+              <Image src={c.url} alt={c.title} width={620} height={480} />
             </div>
-          ))   
+          ))
         }
       </div>
     </Content>
