@@ -4,7 +4,7 @@ import RegularLink from "@/components/regular -link";
 export default function BlogPost() {
   return (
     <Content className="my-4 space-y-2">
-      <h1 className="text-2xl font-bold">Exploring Amazon Cognito to protect .NET 8 Web API backend.</h1>
+      <h1 className="text-2xl font-bold">Exploring Amazon Cognito to protect .NET 8 Web API backend</h1>
       <p className="italic">9/27/2024</p>
       <div className="space-y-4">
         <div>

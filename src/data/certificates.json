@@ -38,5 +38,57 @@
   {
     "title": "AWS Certified Cloud Practitioner",
     "url": "/aws/aws-certified-cloud-practitioner.jpg"
+  },
+  {
+    "title": "Microsoft Certified: Solution Architect Expert",
+    "url": "/microsoft/ms-azure-solutions-architect-expert.png"
+  },
+  {
+    "title": "Microsoft Certified: DevOps Engineer Expert",
+    "url": "/microsoft/ms-devops-engineer-expert.png"
+  },
+  {
+    "title": "Microsoft Certified: Azure Administrator Associate",
+    "url": "/microsoft/ms-azure-administrator-associate.png"
+  },
+  {
+    "title": "Microsoft Certified: Azure AI Engineer Associate",
+    "url": "/microsoft/ms-azure-ai-engineer-associate.png"
+  },
+  {
+    "title": "Microsoft Certified: Azure Developer Associate",
+    "url": "/microsoft/ms-azure-developer-associate.png"
+  },
+  {
+    "title": "Microsoft Certified: Azure AI Fundamentals",
+    "url": "/microsoft/ms-azure-ai-fundamentals.png"
+  },
+  {
+    "title": "Microsoft Certified: Azure Data Fundamentals",
+    "url": "/microsoft/ms-azure-data-fundamentals.png"
+  },
+  {
+    "title": "Microsoft Certified: Azure Fundamentals",
+    "url": "/microsoft/ms-azure-fundamentals.png"
+  },
+  {
+    "title": "MS: Programming in HTML 5 with JavaScript and CSS3",
+    "url": "/microsoft/ms-specialist-html5-js-css3.png"
+  },
+  {
+    "title": "Microsoft Certified Professional",
+    "url": "/microsoft/ms-certified-professional.png"
+  },
+  {
+    "title": "MCTS: .NET Framework 4, Web Applications",
+    "url": "/microsoft/ms-mcts-net4-web-app.png"
+  },
+  {
+    "title": "MTA: Database Fundamentals",
+    "url": "/microsoft/ms-mta-database-fundamentals.png"
+  },
+  {
+    "title": "MTA: Software Development Fundamentals",
+    "url": "/microsoft/ms-mta-software-dev-fundamentals.png"
   }
 ]
