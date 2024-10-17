@@ -9,13 +9,7 @@ export default function Services() {
         ServiceData.map((s, i) => (
           <div key={`svc-${i}`} className="py-4">
             <h2 className="text-xl font-bold">{s.name}</h2>
-            <p>{s.desc}</p>
             <ul className="list-disc pl-6">
-              {
-                s.details.map((d, i) => (
-                  <li key={`ex-${i}`}>{d.name}</li>
-                ))
-              }
             </ul>
           </div>
         ))

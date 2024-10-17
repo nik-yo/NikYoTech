@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Improve WordPress Site",
+    "desc": "Helped Marketing team configured WordPress site that can handle 25,000 concurrent connections.",
+    "stack": [
+      "Locust",
+      "Docker",
+      "Amazon ECS"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Speed Up Big Data Ingestion",
+    "desc": "Reduce the AWS Cost and Usage Report data ingestion from over 24 hours to around 2 hours.",
+    "stack": [
+      "Apache Spark",
+      "Apache Phoenix",
+      "Apache Hbase",
+      "Amazon EMR"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Containerize Batch Application to improve scalability",
+    "desc": "Upgrade and containerize batch applications",
+    "stack": [
+      ".NET Core",
+      "Amazon ECS",
+      "VB.NET"
+    ],
+    "url": "#",
+    "status": "Completed"
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Replaced EKS Fargate with EKS Nodegroup",
+    "desc": "Saved $20k by running EKS Fargate in EKS Nodegroup",
+    "stack": [
+      "Amazon EKS",
+      "Amazon EKS Fargate",
+      "Amazon EC2"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Reduce amount of CloudWatch Logs Ingestion",
+    "desc": "Reduced cost by limited CloudWatch Logs only for critical logs",
+    "stack": [
+      "Amazon CloudWatch Logs"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": ".NET 7 Application in Linux Container",
+    "desc": "Saved $7,000 by refactoring .NET 7 application that only runs in Windows to run in Linux",
+    "stack": [
+      "VB.NET",
+      "Docker",
+      "Linux"
+    ],
+    "url": "#",
+    "status": "Completed"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "title": "AsterChat T-Shirt Editing",
+    "desc": "Customized t-shirt design so company can print it in 2 business days.",
+    "stack" : [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Microsoft Expression Design 4"
+    ],
+    "url": "/projects/t-shirt-editing",
+    "status": "Completed",
+    "date": "9/6/2024"
+  },
+  {
+    "title": "S3 Bundling Proof of Concept",
+    "desc": "Setup cloud resources to perform proof of concept to bundle and keep track of files to be uploaded to s3.",
+    "stack": [
+      "Amazon S3",
+      "Amazon EC2",
+      "Amazon Aurora MySQL"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Automatically Benchmark EC2 Instances",
+    "desc": "Setup a process to help company benchmark various EC2 instance types automatically and on demand.",
+    "stack": [
+      "Geekbench",
+      "Aida 64",
+      "Amazon EC2",
+      "Amazon Aurora MySQL"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Update Image using Photoshop",
+    "desc": "Helped company reuse existing image by updating the year while keeping the background the same.",
+    "stack": [
+      "Adobe Photoshop"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Blur Sensitive Information for a Demo Video",
+    "desc": "Removed sensitive data from a video recorded to demo company products.",
+    "stack": [
+      "Adobe Premier Pro"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Connection Script to Integrate AWS account and Web Application",
+    "desc": "Script to integrate Cloudsaver application and cloud providers.",
+    "stack": [
+      "PowerShell",
+      "Bash"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Get Application Published in Okta Catalog",
+    "desc": "Helped customers by publishing Cloudsaver SSO application in Okta catalog.",
+    "stack": [
+      "Okta",
+      "SAML 2.0",
+      "SSO",
+      "Auth0"
+    ],
+    "url": "#",
+    "status": "Completed"
+  }
+]

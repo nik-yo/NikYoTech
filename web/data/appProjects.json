@@ -1,0 +1,131 @@
+[
+  {
+    "title": "WorkView Android and iOS App Development",
+    "desc": "Completed existing iOS app development and developed Android app from scratch along with .NET Web API backend for WorkView, LLC.",
+    "stack": [
+      "Swift",
+      "Java",
+      ".NET Web API"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "AWS Cost and Usage Data Aggregation for Web Application Consumption and Analytics",
+    "desc": "Created ETL (Extract, Transform, Load) pySpark application to aggregate hundreds of GBs of data, so they are fast enough to be queried by web application.",
+    "stack": [
+      "Python",
+      "Amazon EMR",
+      "Apache Spark"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "CloudSaver Visual Studio Extension",
+    "desc": "Developed Visual Studio Extension for CloudSaver developers to change local connection to remote environment, decrypt encrypted string, and perform local database schema migration.",
+    "stack": [
+      "C#",
+      ".NET"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Web Page for Single Sign-On (SSO) Configuration",
+    "desc": "Enabled customer to configure authentication via SSO into company's web application.",
+    "stack": [
+      "React",
+      "C#",
+      ".NET Web API"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Gentle Heart Company (GHC) Nepal",
+    "desc": "Helping a non-profit in Nepal to setup their WordPress site with e-commerce and e-booking.",
+    "stack": [
+      "WordPress"
+    ],
+    "url": "https://ghcnepal.com",
+    "status": "Ongoing"
+  },
+  {
+    "title": "Cloudsaver Connection CLI",
+    "desc": "Created Connection CLI application to perform integration between Cloudsaver app and cloud providers.",
+    "stack": [
+      "Python",
+      "Click"
+    ],
+    "url": "#",
+    "status": "Ongoing"
+  },
+  {
+    "title": "Upgrade Xen Hypervisor-based EC2 Instance to Nitro-based Instance Programmatically",
+    "desc": "Update app to create a feature to enable Xen to Nitro upgrade",
+    "stack": [
+      "VB.NET",
+      "AWS Systems Manager",
+      "Bash"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Upgrade from PV virtualization to HVM for EC2 AMI programmatically",
+    "desc": "App feature to upgrade virtualization from PV to HVM.",
+    "stack": [
+      "VB.NET",
+      "AWS Systems Manager",
+      "Bash"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Streamline Monthly Report Generation",
+    "desc": "Update application to reduce report generation for 6 board from one week to 24 boards in few hours.",
+    "stack": [
+      "Stata",
+      "Microsoft Excel",
+      "VBA"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Git Cleanup Every 90 Days",
+    "desc": "Script to help clean up Git branches older than 90 days.",
+    "stack": [
+      "PowerShell",
+      "Bash",
+      "Git"
+    ],
+    "url": "",
+    "status": "Completed"
+  },
+  {
+    "title": "Implement Scrolling in Silverlight Image Viewer",
+    "desc": "Helped sales department to make customers happy by enabling scrolling on Silvelight image viewer plugin.",
+    "stack": [
+      "VB.NET",
+      "Silverlight"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Downsize EBS Programmatically",
+    "desc": "App feature to resize existing EBS by moving data to smaller EBS.",
+    "stack": [
+      "VB.NET",
+      "AWS Systems Manager",
+      "Bash",
+      "Amazon EBS",
+      "Amazon EC2"
+    ],
+    "url": "#",
+    "status": "Completed"
+  }
+]

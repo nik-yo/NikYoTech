@@ -1,0 +1,149 @@
+[
+  {
+    "title": "Infrastructure Alarms and Notifications for Compliance",
+    "desc": "Configured various alarms and notifications to help the company meet SOC 2 and ISO 27001 certifications requirements.",
+    "stack": [
+      "Amazon CloudWatch",
+      "Amazon SNS",
+      "AWS CloudTrail"
+    ],
+    "url": "#",
+    "statuc": "Completed"
+  },  
+  {
+    "title": "CDK to Create Cloudsaver Environment",
+    "desc": "Developed process to create environment using CDK to bypass Cloudformation regiona limitation.",
+    "stack": [
+      "C#.NET",
+      "Amazon CDK"
+    ],
+    "url": "#",
+    "status": "Ongoing"
+  },
+  {
+    "title": "Bicep to Create Environment in Azure",
+    "desc": "Enabled creation of Cloudsaver environment in Azure using Bicep.",
+    "stack": [
+      "Bicep",
+      "Azure"
+    ],
+    "url": "#",
+    "status": "Ongoing"
+  },
+  {
+    "title": "Automate Ticket Creation",
+    "desc": "Automatically created tickets when there's vulnerability detected, unhealthy cloud resources or security event.",
+    "stack": [
+      "Azure DevOps",
+      "AWS EventBridge",
+      "AWS Lambda"
+    ],
+    "url": "#",
+    "status": "Ongoing"
+  },
+  {
+    "title": "Build CI/CD Pipelines in Azure DevOps",
+    "desc": "Created CI/CD pipelines such as .NET, Nuget, Python, Node.js, EF schema migration.",
+    "stack": [
+      "Azure DevOps",
+      ".NET",
+      "Node.js",
+      "Python",
+      "Nuget",
+      "Entity Framework"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Pseudo Blue/Green Deployment for API pods in Kubernetes",
+    "desc": "Released new features safely in Kubernetes.",
+    "stack": [
+      "Kubernetes",
+      "Azure DevOps",
+      "Helm"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Setup Datadog Tracing and Logging for EKS Fargate",
+    "desc": "Setup monitoring APM and Logging for Datadog.",
+    "stack": [
+      "Datadog",
+      "Azure DevOps",
+      "Helm",
+      "Kubernetes"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Implement Opensearch Snapshot Lifecycle Management",
+    "desc": "Automatically create backup for disaster recovery.",
+    "stack": [
+      "Opensearch",
+      "Amazon S3"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Prevent Accidental Pull Request Merge from Unauthorized Branch",
+    "desc": "Automatically check if pull request is from authorized source.",
+    "stack": [
+      "PowerShell",
+      "Azure DevOps",
+      "Git"
+    ],
+    "url": "https://github.com/nik-yo/NikYo.AzureDevOps.PRValidation",
+    "status": "Completed"
+  },
+  {
+    "title": "Automatically Moved Work Item in Azure DevOps",
+    "desc": "Automated ticket movement after pull request is completed.",
+    "stack": [
+      "C#.NET",
+      "Azure Functions",
+      "Azure DevOps"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Dynamic Workers Deployments per Kafka Topic",
+    "desc": "Configure setup to assign group of pods to a topic without any manual configuration change.",
+    "stack": [
+      "Azure DevOps",
+      "jq",
+      "yq",
+      "Bash",
+      "Kubernetes",
+      "Helm"
+    ],
+    "url": "https://github.com/nik-yo/WorkersPerTopic",
+    "status": "Completed"
+  },
+  {
+    "title": "Automatically Run CSX Script and Perform Version Control Process",
+    "desc": "Removed the load from developer to periodically run CSX script.",
+    "stack": [
+      "Azure DevOps",
+      "Git",
+      "PowerShell"
+    ],
+    "url": "",
+    "status": "Completed"
+  },
+  {
+    "title": "Get Memory Dump from .NET Application and Upload to S3",
+    "desc": "Developed a script to automatically get memory dump and upload to S3.",
+    "stack": [
+      "Bash",
+      "Amazon S3",
+      "Dotnet tools"
+    ],
+    "url": "#",
+    "status": "Completed"
+  }
+]

@@ -1,146 +1,32 @@
 [
   {
-    "name": "Develop custom application",
-    "desc": "Application with features tailored to your business needs.",
-    "details": [
-      {
-        "name": "Web application (frontend, backend)"
-      },
-      {
-        "name": "Mobile application (android, iOS)"
-      },
-      {
-        "name": "Desktop application"
-      },
-      {
-        "name": "Software packages (Nuget, pip)"
-      },
-      {
-        "name": "Product extensions (Azure DevOps, Visual Studio)"
-      }
-    ]
+    "key": "app",
+    "name": "Custom Application Development",
+    "url": "/services/custom-application-development"
   },
   {
-    "name": "Design software and cloud architecture",
-    "desc": "Robust, scalable, and cost effective architecture for software or cloud-based processes.",
-    "details": [
-      {
-        "name": "Microservices"
-      },
-      {
-        "name": "Serverless"
-      },
-      {
-        "name": "Event-driven"
-      },
-      {
-        "name": "Infrastructure as Code (IaC)"
-      }
-    ]
+    "key": "cloud",
+    "name": "Cloud Solution Architecture",
+    "url": "/services/cloud-solution-architecture"
   },
   {
-    "name": "Optimize cost and performance",
-    "desc": "Save on financial and effort cost without sacrificing development or operational performance.",
-    "details": [
-      {
-        "name": "FinOps practice"
-      },
-      {
-        "name": "Technology modernization"
-      },
-      {
-        "name": "Autoscaling"
-      }
-    ]
+    "key": "cost",
+    "name": "Cost Optimization",
+    "url": "/services/cost-optimization"
   },
   {
-    "name": "Automate application deployments",
-    "desc": "The logistic and delivery of application from development to end user.",
-    "details": [
-      {
-        "name": "CI/CD pipelines"
-      },
-      {
-        "name": "Automated test"
-      },
-      {
-        "name": "Containerization"
-      }
-    ]
+    "key": "performance",
+    "name": "Performance Improvement",
+    "url": "/services/performance-improvement"
   },
   {
-    "name": "Setup monitoring, alarms/alerts, and automate actions",
-    "desc": "Operational monitoring and automation.",
-    "details": [
-      {
-        "name": "Application performance monitoring (APM)"
-      },
-      {
-        "name": "Open Telemetry"
-      },
-      {
-        "name": "Automated ticketing system integration"
-      }
-    ]
+    "key": "operation",
+    "name": "Operation and Management Automation",
+    "url": "/services/operation-and-management-automation"
   },
   {
-    "name": "Troubleshooting",
-    "desc": "Find solutions to technological problems.",
-    "details": [
-      {
-        "name": "Race condition"
-      },
-      {
-        "name": "Deadlock"
-      },
-      {
-        "name": "Root Cause Analysis (RCA)"
-      }
-    ]
-  },
-  {
-    "name": "Manage identity, access, and governance",
-    "desc": "Setup tools to manage permissions according to compliance requirements.",
-    "details": [
-      {
-        "name": "Identity and Access Management (IAM)"
-      },
-      {
-        "name": "Permissions and policies"
-      },
-      {
-        "name": "Compliance requirements"
-      }
-    ]
-  },
-  {
-    "name": "Research and Proof of Concept",
-    "desc": "Testing idea and solutions to determine compatibility and ensure successful implementation.",
-    "details": [
-      {
-        "name": "Sandbox"
-      },
-      {
-        "name": "Simulation"
-      },
-      {
-        "name": "Load testing"
-      }
-    ]
-  },
-  {
-    "name": "Miscellaneous",
-    "desc": "Other technology related needs.",
-    "details": [
-      {
-        "name": "Hardware"
-      },
-      {
-        "name": "CAD and graphics"
-      },
-      {
-        "name": "Connect with other professionals and experts"
-      }
-    ]
+    "key": "else",
+    "name": "Other Technology Needs",
+    "url": "/services/other-technology-needs"
   }
 ]

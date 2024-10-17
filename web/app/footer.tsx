@@ -10,7 +10,7 @@ export default function Footer() {
       </div>      
       <div className="flex justify-end space-x-4">
         <Link href="https://github.com/nik-yo"><FaGithub className="size-8" /></Link>
-        <Link href="https://www.linkedin.com/in/nikkiyodo"><FaLinkedin href="" className="size-8" /></Link>
+        <Link href="https://www.linkedin.com/in/nikkiyodo"><FaLinkedin className="size-8" /></Link>
       </div>
     </Content>
   )

@@ -1,0 +1,127 @@
+[
+  {
+    "title": "CloudSaver SaaS platform",
+    "desc": "Built CloudSaver SaaS platform environment in AWS that are robust, scaleable, and performant.",
+    "stack": [
+      "Amazon VPC",
+      "Amazon Aurora MySQL",
+      "Amazon Elasticache Redis",
+      "Amazon MSK",
+      "Amazon Opensearch Service",
+      "Amazon EMR",
+      "Amazon EKS",
+      "Elastisearch"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "White Labeling Network Routing",
+    "desc": "Configured networking in the cloud so white labeling with subdomain will just work without application having to manage subdomain registration.",
+    "stack": [
+      "Amazon Route 53",
+      "Amazon ALB",
+      "Amazon EKS",
+      "Kubernetes",
+      "Ingress-Nginx controller"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Idempotent MySQL Database Schema Migration",
+    "desc": "Orchestrated MySQL database schema update using various cloud resources.",
+    "stack": [
+      "Amazon S3 Event Notifications",
+      "Amazon SQS",
+      "AWS Lambda",
+      "Azure DevOps",
+      "Entity Framework"   
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "CloudSaver Site-to-Site VPN",
+    "desc": "Setup site-to-site VPN between CloudSaver, Inc. and customer environment to retrieve internal data securely.",
+    "stack": [
+      "AWS Site-to-Site VPN",
+      "AWS VPC"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "AWS Marketplace Notification Routing",
+    "desc": "Routed notification from AWS Marketplace cross-account, cross-region with zero application code change.",
+    "stack": [
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon EventBridge Pipes",
+      "AWS Lambda"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Cost and Usage Data Obfuscation Process",
+    "desc": "Obfuscated AWS Cost and Usage Data automatically to be used for Demo purposes.",
+    "stack": [
+      "Amazon S3 Event Notifications",
+      "AWS Lambda",
+      "Amazon EMR Serverless",
+      "Apache Spark",
+      "Python"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Host WordPress in AWS",
+    "desc": "Built scaleable WordPress site in AWS for marketing department.",
+    "stack": [
+      "WordPress",
+      "NFS",
+      "Amazon EC2",
+      "Amazon ECS",
+      "Amazon Aurora MySQL"
+    ],
+    "url": "https://github.com/nik-yo/NikYo.Aws.WordPress",
+    "status": "Completed"
+  },
+  {
+    "title": "Host Rise 360 Educational Content in AWS",
+    "desc": "Setup hosting for education team  with requirements to authenticate against Microsoft 365.",
+    "stack": [
+      "Node.js",
+      "MSAL.js"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },  
+  {
+    "title": "OpenVPN Upgrade, Setup and Configured",
+    "desc": "Enabled access to resources behind private network through VPN and automated SSL cert using cerbot.",
+    "stack": [
+      "OpenVPN",
+      "certbot",
+      "Let's Encrypt",
+      "Amazon EC2"
+    ],
+    "url": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Internal Ops Reporting Process",
+    "desc": "Setup various resources to enable ops tools report generation.",
+    "stack": [
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon Lambda",
+      "Amazon ECS",
+      "Python"
+    ],
+    "url": "#",
+    "status": "Completed"
+  }
+]
