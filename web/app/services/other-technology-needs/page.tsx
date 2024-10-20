@@ -1,6 +1,7 @@
 import Content from "@/components/content";
 import ElseProjects from "../../../data/elseProjects.json"
 import Link from "next/link";
+import ProjectCard from "@/components/project-card";
 
 export default function Service() {
   return (
@@ -15,13 +16,11 @@ export default function Service() {
         <div className="flex flex-col gap-4">
         {
           ElseProjects.map((p, i) => (
+            p.url ?
             <Link href={p.url} key={`p-${i}`}>
-              <div className="p-4 rounded-md shadow border">
-                <h2 className="text-lg font-bold">{p.title}</h2>
-                <p>{p.desc}</p>
-                <p className="mt-2"><strong>Stack</strong>: {p.stack.join(', ')}</p>
-              </div>
-            </Link>
+              <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+            </Link> :
+            <ProjectCard key={`p-${i}`} title={p.title} desc={p.desc} stack={p.stack} />
           ))
         }
         </div>

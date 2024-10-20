@@ -12,7 +12,7 @@
       "Amazon EKS",
       "Elastisearch"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -25,7 +25,7 @@
       "Kubernetes",
       "Ingress-Nginx controller"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -38,7 +38,7 @@
       "Azure DevOps",
       "Entity Framework"   
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -48,7 +48,7 @@
       "AWS Site-to-Site VPN",
       "AWS VPC"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -60,7 +60,7 @@
       "Amazon EventBridge Pipes",
       "AWS Lambda"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -73,7 +73,7 @@
       "Apache Spark",
       "Python"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -96,7 +96,7 @@
       "Node.js",
       "MSAL.js"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },  
   {
@@ -108,7 +108,7 @@
       "Let's Encrypt",
       "Amazon EC2"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -121,7 +121,7 @@
       "Amazon ECS",
       "Python"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   }
 ]

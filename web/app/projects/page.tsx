@@ -23,80 +23,80 @@ export default function Projects() {
   }
 
   return (
-    <Content className="my-4 space-y-2">
+    <Content className="my-4 space-y-4">
       <h1 className="text-2xl font-bold">Projects</h1>
-      <h2 className="text-lg font-bold">Custom Application Development</h2>
-      {
-        AppProjects.map((p, i) => (
-          <Link href={p.url} key={`p-${i}`}>
-            <div className="p-4 rounded-md shadow border">
-              <h2 className="text-lg font-bold">{p.title}</h2>
-              <p>{p.desc}</p>
-              <p className="mt-2"><strong>Stack</strong>: {p.stack.join(', ')}</p>
-            </div>
-          </Link>
-        ))
-      }
-      <h2 className="text-lg font-bold">Cloud Solution Architecture</h2>
-      {
-        CloudProjects.map((p, i) => (
-          <Link href={p.url} key={`p-${i}`}>
-            <div className="p-4 rounded-md shadow border">
-              <h2 className="text-lg font-bold">{p.title}</h2>
-              <p>{p.desc}</p>
-              <p className="mt-2"><strong>Stack</strong>: {p.stack.join(', ')}</p>
-            </div>
-          </Link>
-        ))
-      }
-      <h2 className="text-lg font-bold">Cost Optimization</h2>
-      {
-        CostProjects.map((p, i) => (
-          <Link href={p.url} key={`p-${i}`}>
-            <div className="p-4 rounded-md shadow border">
-              <h2 className="text-lg font-bold">{p.title}</h2>
-              <p>{p.desc}</p>
-              <p className="mt-2"><strong>Stack</strong>: {p.stack.join(', ')}</p>
-            </div>
-          </Link>
-        ))
-      }
-      <h2 className="text-lg font-bold">Performance Improvement</h2>
-      {
-        PerformanceProjects.map((p, i) => (
-          <Link href={p.url} key={`p-${i}`}>
-            <div className="p-4 rounded-md shadow border">
-              <h2 className="text-lg font-bold">{p.title}</h2>
-              <p>{p.desc}</p>
-              <p className="mt-2"><strong>Stack</strong>: {p.stack.join(', ')}</p>
-            </div>
-          </Link>
-        ))
-      }
-      <h2 className="text-lg font-bold">Operation and Management Automation</h2>
-      {
-        OperationProjects.map((p, i) => (
-          <Link href={p.url} key={`p-${i}`}>
-            <div className="p-4 rounded-md shadow border">
-              <h2 className="text-lg font-bold">{p.title}</h2>
-              <p>{p.desc}</p>
-              <p className="mt-2"><strong>Stack</strong>: {p.stack.join(', ')}</p>
-            </div>
-          </Link>
-        ))
-      }
-      <h2 className="text-lg font-bold">Other Technology Needs</h2>
-      {
-        ElseProjects.map((p, i) => (
-          <Link href={p.url} key={`p-${i}`}>
-            <div className="p-4 rounded-md shadow border">
-              <h2 className="text-lg font-bold">{p.title}</h2>
-              <p>{p.desc}</p>
-              <p className="mt-2"><strong>Stack</strong>: {p.stack.join(', ')}</p>
-            </div>
-          </Link>
-        ))
-      }
+      <div className="space-y-2">
+        <h2 className="text-lg font-bold">Custom Application Development</h2>
+        {
+          AppProjects.map((p, i) => (
+            p.url ?
+            <Link href={p.url} key={`p-${i}`}>
+              <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+            </Link> :
+            <ProjectCard key={`p-${i}`} title={p.title} desc={p.desc} stack={p.stack} />
+          ))
+        }
+      </div>
+      <div className="space-y-2">
+        <h2 className="text-lg font-bold">Cloud Solution Architecture</h2>
+        {
+          CloudProjects.map((p, i) => (
+            p.url ?
+            <Link href={p.url} key={`p-${i}`}>
+              <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+            </Link> :
+            <ProjectCard key={`p-${i}`} title={p.title} desc={p.desc} stack={p.stack} />
+          ))
+        }
+      </div>
+      <div className="space-y-2">
+        <h2 className="text-lg font-bold">Cost Optimization</h2>
+        {
+          CostProjects.map((p, i) => (
+            p.url ?
+            <Link href={p.url} key={`p-${i}`}>
+              <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+            </Link> :
+            <ProjectCard key={`p-${i}`} title={p.title} desc={p.desc} stack={p.stack} />
+          ))
+        }
+      </div>
+      <div className="space-y-2">
+        <h2 className="text-lg font-bold">Performance Improvement</h2>
+        {
+          PerformanceProjects.map((p, i) => (
+            p.url ?
+            <Link href={p.url} key={`p-${i}`}>
+              <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+            </Link> :
+            <ProjectCard key={`p-${i}`} title={p.title} desc={p.desc} stack={p.stack} />
+          ))
+        }
+      </div>
+      <div className="space-y-2">
+        <h2 className="text-lg font-bold">Operation and Management Automation</h2>
+        {
+          OperationProjects.map((p, i) => (
+            p.url ?
+            <Link href={p.url} key={`p-${i}`}>
+              <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+            </Link> :
+            <ProjectCard key={`p-${i}`} title={p.title} desc={p.desc} stack={p.stack} />
+          ))
+        }
+      </div>
+      <div className="space-y-2">
+        <h2 className="text-lg font-bold">Other Technology Needs</h2>
+        {
+          ElseProjects.map((p, i) => (
+            p.url ?
+            <Link href={p.url} key={`p-${i}`}>
+              <ProjectCard title={p.title} desc={p.desc} stack={p.stack} />
+            </Link> :
+            <ProjectCard key={`p-${i}`} title={p.title} desc={p.desc} stack={p.stack} />
+          ))
+        }
+      </div>      
     </Content>
   )
 }

@@ -7,7 +7,7 @@
       "Amazon SNS",
       "AWS CloudTrail"
     ],
-    "url": "#",
+    "url": "",
     "statuc": "Completed"
   },  
   {
@@ -17,7 +17,7 @@
       "C#.NET",
       "Amazon CDK"
     ],
-    "url": "#",
+    "url": "",
     "status": "Ongoing"
   },
   {
@@ -27,7 +27,7 @@
       "Bicep",
       "Azure"
     ],
-    "url": "#",
+    "url": "",
     "status": "Ongoing"
   },
   {
@@ -38,7 +38,7 @@
       "AWS EventBridge",
       "AWS Lambda"
     ],
-    "url": "#",
+    "url": "",
     "status": "Ongoing"
   },
   {
@@ -52,7 +52,7 @@
       "Nuget",
       "Entity Framework"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -63,7 +63,7 @@
       "Azure DevOps",
       "Helm"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -75,7 +75,7 @@
       "Helm",
       "Kubernetes"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -85,7 +85,7 @@
       "Opensearch",
       "Amazon S3"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -107,7 +107,7 @@
       "Azure Functions",
       "Azure DevOps"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -143,7 +143,7 @@
       "Amazon S3",
       "Dotnet tools"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   }
 ]

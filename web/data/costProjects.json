@@ -7,7 +7,7 @@
       "Amazon EKS Fargate",
       "Amazon EC2"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -16,7 +16,7 @@
     "stack": [
       "Amazon CloudWatch Logs"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   },
   {
@@ -27,7 +27,7 @@
       "Docker",
       "Linux"
     ],
-    "url": "#",
+    "url": "",
     "status": "Completed"
   }
 ]
