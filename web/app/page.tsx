@@ -11,7 +11,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [token, setToken] = useState<string | null>(null);
+  // const [token, setToken] = useState<string | null>(null);
   
   const form = useForm({
     mode: 'uncontrolled',
@@ -42,14 +42,19 @@ export default function Home() {
         process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
         { action: 'submit' }
       );
-      setToken(recaptchaToken);
-      data.token = token;
+      // setToken(recaptchaToken);
+      data.token = recaptchaToken;
 
-      await fetch('https://api.nikyotech.com/email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
+      try {
+        await fetch('https://api.nikyotech.com/email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        })
+        form.reset();
+      } catch {
+        console.error('Error');
+      }      
     } else {
       console.error('reCAPTCHA is not ready yet.');
     }
