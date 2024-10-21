@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  DomainIdentity:
+    Type: AWS::SES::EmailIdentity
+    Properties:
+       EmailIdentity: nikyotech.com
+
+  # DomainIdentityRecordSetGroup:
+  #   Type: AWS::Route53::RecordSetGroup
+  #   Properties:
+  #     HostedZoneId: !ImportValue AsyloSoftHostedZoneId
+  #     RecordSets: 
+  #       - Name: !GetAtt DomainIdentity.DkimDNSTokenName1
+  #         Type: CNAME
+  #         TTL: 3600
+  #         ResourceRecords:
+  #           - !GetAtt DomainIdentity.DkimDNSTokenValue1
+  #       - Name: !GetAtt DomainIdentity.DkimDNSTokenName2
+  #         Type: CNAME
+  #         TTL: 3600
+  #         ResourceRecords:
+  #           - !GetAtt DomainIdentity.DkimDNSTokenValue2
+  #       - Name: !GetAtt DomainIdentity.DkimDNSTokenName3
+  #         Type: CNAME
+  #         TTL: 3600
+  #         ResourceRecords:
+  #           - !GetAtt DomainIdentity.DkimDNSTokenValue3

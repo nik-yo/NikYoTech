@@ -7,8 +7,12 @@ import { FaCloud, FaGaugeHigh, FaGears, FaLaptopCode, FaSackDollar, FaScrewdrive
 import { useForm } from '@mantine/form';
 import { Button, Container, Flex, Group, Textarea, TextInput } from "@mantine/core";
 import Link from "next/link";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [token, setToken] = useState<string | null>(null);
+  
   const form = useForm({
     mode: 'uncontrolled',
     initialValues: {
@@ -21,12 +25,54 @@ export default function Home() {
     },
     validate: {
       firstName: (value) => value ? null : 'First Name required',
+      lastName: (value) => value ? null : 'Last Name required',
       email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+      company: (value) => value ? null : 'Company required',
+      project: (value) => value ? null : 'Project required',
     },
   });
 
+  const handleSubmit = async (values: typeof form.values) => {
+    type Data = typeof form.values & {token?: string | null}
+
+    const data: Data = values;
+
+    if (typeof window.grecaptcha !== 'undefined') {
+      const recaptchaToken = await window.grecaptcha!.execute(
+        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+        { action: 'submit' }
+      );
+      setToken(recaptchaToken);
+      data.token = token;
+
+      await fetch('https://api.nikyotech.com/email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+    } else {
+      console.error('reCAPTCHA is not ready yet.');
+    }
+  }
+
+  useEffect(() => {
+    // Dynamically add reCAPTCHA script on this specific page
+    const script = document.createElement('script');
+    script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Clean up the script when the component unmounts
+      document.head.removeChild(script);
+    };
+  }, []);
+  
   return (
     <>
+      <Head>
+        <title>NikYo Tech</title>
+      </Head>
       <div className="h-80 bg-[url('/bg.jpeg')] bg-no-repeat bg-center bg-cover bg-[rgba(0,0,0,0.3)] flex items-center p-8 justify-center" style={{backgroundBlendMode: 'darken'}}>
         <h2 className="text-2xl text-center font-bold text-white drop-shadow">I help businesses solve problems and achieve their goals through cloud, mobile, and web technologies.</h2>
       </div>
@@ -63,7 +109,7 @@ export default function Home() {
         <Content>
           <div className="text-2xl font-bold text-center mb-4">Let's Get Stuffs Done.</div>
           <div className="px-12">
-            <form>
+            <form onSubmit={form.onSubmit((values) => handleSubmit(values))}>
               <Flex direction={{ base: 'column', sm: 'row' }} gap="md">
                 <TextInput
                   withAsterisk
@@ -86,7 +132,6 @@ export default function Home() {
                     key={form.key('email')}
                     {...form.getInputProps('email')} />
                 <TextInput
-                    withAsterisk
                     label="Phone"
                     className="grow"
                     key={form.key('phone')}
