@@ -5,13 +5,15 @@ import Content from "@/components/content";
 import Image from "next/image"
 import { FaCloud, FaGaugeHigh, FaGears, FaLaptopCode, FaSackDollar, FaScrewdriverWrench } from "react-icons/fa6";
 import { useForm } from '@mantine/form';
-import { Button, Container, Flex, Group, Textarea, TextInput } from "@mantine/core";
+import { Button, Container, Flex, Group, Text, Textarea, TextInput } from "@mantine/core";
 import Link from "next/link";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   // const [token, setToken] = useState<string | null>(null);
+  const [disableSubmit,setDisableSubmit] = useState(false);
+  const [status, setStatus] = useState("");
   
   const form = useForm({
     mode: 'uncontrolled',
@@ -38,23 +40,29 @@ export default function Home() {
     const data: Data = values;
 
     if (typeof window.grecaptcha !== 'undefined') {
-      const recaptchaToken = await window.grecaptcha!.execute(
-        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
-        { action: 'submit' }
-      );
-      // setToken(recaptchaToken);
-      data.token = recaptchaToken;
+      setDisableSubmit(true);
+      setStatus("");
 
       try {
+        const recaptchaToken = await window.grecaptcha!.execute(
+          process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+          { action: 'submit' }
+        );
+        // setToken(recaptchaToken);
+        data.token = recaptchaToken;
+
         await fetch('https://api.nikyotech.com/email', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
         })
         form.reset();
+        setStatus("Submitted");
       } catch {
-        console.error('Error');
-      }      
+        setStatus("Submission failed");
+      } finally {
+        setDisableSubmit(false);
+      }
     } else {
       console.error('reCAPTCHA is not ready yet.');
     }
@@ -157,7 +165,11 @@ export default function Home() {
                 key={form.key('project')}
                 {...form.getInputProps('project')} mt="md"/>
               <Group justify="flex-end" mt="md">
-                <Button type="submit" w={{ base: '100%', sm:'auto' }} color="green">Submit</Button>
+                {
+                  status &&
+                  <Text>{status}</Text>
+                }
+                <Button type="submit" w={{ base: '100%', sm:'auto' }} color="green" disabled={disableSubmit}>Submit</Button>
               </Group>
             </form>
           </div>

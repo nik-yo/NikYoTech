@@ -66,7 +66,7 @@ Resources:
           
           if (!data.token) {
             // https://docs.aws.amazon.com/apigateway/latest/developerguide/handle-errors-in-lambda-integration.html 
-            var error = {
+            const error = {
               errorType : "BadRequest",
               httpStatus : 400,
               requestId : context.awsRequestId
@@ -79,7 +79,7 @@ Resources:
           const recaptchaResponse = await verifyRecaptcha(data.token);
 
           if (!recaptchaResponse.success) {
-            var error = {
+            const error = {
               errorType : "Unauthorized",
               httpStatus : 401,
               requestId : context.awsRequestId
