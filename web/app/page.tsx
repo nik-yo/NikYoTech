@@ -107,7 +107,7 @@ export default function Home() {
       </Content>
       <div className="bg-blue-500 text-white w-full p-4">
         <Content>
-          <div className="text-2xl font-bold text-center mb-4">Let's Get Stuffs Done.</div>
+          <div className="text-2xl font-bold text-center mb-4">Let&apos;s Get Stuffs Done.</div>
           <div className="px-12">
             <form onSubmit={form.onSubmit((values) => handleSubmit(values))}>
               <Flex direction={{ base: 'column', sm: 'row' }} gap="md">
