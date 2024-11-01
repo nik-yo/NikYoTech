@@ -1,10 +1,12 @@
 export default function TalkCard({
   children,
+  className
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
+  className?: string
 }) {
   return (
-    <div className="rounded border-4 p-4">
+    <div className={`rounded border p-4 shadow ${className}`}>
       {children}
     </div>
   )

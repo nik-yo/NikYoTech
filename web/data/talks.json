@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Scheduled Notifications Using Amazon CloudWatch Events, SNS, and Lambda",
+    "desc": "Subscribing to a topic to receive scheduled notifications with fully serverless services.",
+    "stack": [
+      "Ruby",
+      "Go", 
+      "Node.js", 
+      "Python",
+      "Java",
+      "HTML",
+      "Android", 
+      "C#.NET"
+    ],
+    "url": "https://github.com/nik-yo/AWSUGID-OnlineTalk-20200514",
+    "date": "5/14/2020",
+    "venue": "Online",
+    "organizer": "AWS User Group Indonesia"
+  },
+  {
+    "title": "Big Data with Apache Spark and Java",
+    "desc": "Analyze huge amount of data in distributed manner.",
+    "stack": [
+      "Apache Spark",
+      "Java",
+      "Docker",
+      "Bitnami",
+      "Maven"
+    ],
+    "url": "https://github.com/nik-yo/ApacheSparkApp",
+    "date": "10/17/2024",
+    "venue": "Garmin",
+    "organizer": "KC Java User Group"
+  },
+  {
+    "title": "Penny Web Hosting in AWS",
+    "desc": "Host scalable website in AWS for less.",
+    "stack": [
+      "Next.js",
+      "Amazon S3",
+      "Amazon CloudFront",
+      "Amazon Certificate Manager (ACM)",
+      "GitHub"
+    ],
+    "url": "https://github.com/nik-yo/PennyWebHosting",
+    "date": "10/28/2024",
+    "venue": "Westport Flea Market",
+    "organizer": "AWS KC User Group"
+  }
+]
